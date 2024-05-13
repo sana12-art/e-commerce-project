@@ -1,10 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    overflow-x: hidden; /* Empêcher le défilement horizontal */
+    overflow-x: hidden;
     position: relative;
-    top: -550px;
+    margin-top: -550px;
+    margin-bottom: -900px;
+     
 }    
 
 .sc{
@@ -18,9 +19,37 @@ body{
     margin-left: 90px;
     color: #604D38;
 }
+.panier{
+    position: relative;
+    top:-50px ;
+    left: 300px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.login{
+    position: relative;
+    top:-50px ;
+    width: 40px;
+    height: 40px;
+    left: 320px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.connecter{
+    width: 30px;
+    height: 30px;
+    left: -6px;
+    position: relative;
+}
+.addtocart{
+    width: 35px;
+    height: 35px;
+}
 .acceuil,
 .boutique,
-.diagnostic,
+.test,
 .la-marque,
 .sc{
    position: relative;
@@ -32,12 +61,16 @@ body{
 }
 .acceuil,
 .boutique,
-.diagnostic,
+.test,
 .la-marque{
     width: 20px;
     font-weight: 500;
     position: relative;
     top:-40px;
+    margin-left: 35px;
+    justify-content: space-between;
+
+
 }
 
 .la-marque{
@@ -139,13 +172,13 @@ body{
 .produits-maroc{
     position: relative;
     bottom:-100px ;
-    left: -130px;
+    left: -110px;
     color: #604D38;
 }
 .unique{
     position: relative;
     bottom:-100px ;
-    left: -83px;
+    left: -70px;
     color: #604D38;
 }
 
@@ -154,15 +187,10 @@ body{
     border-radius: 5px;
     padding: 1px;
     margin: 1px;
-    width: 100%;
+    width: 99,5%;
     height: 30px;
     background: linear-gradient(to bottom,#B39F87,#f5e1ca);
 
-}
-@media only screen and (max-width: 600px) {
-    .avis-client {
-        width: 98%; /* Par exemple, réduisez la largeur à 90% pour les appareils mobiles */
-    }
 }
 .logo{
     border: 2px solid;
@@ -170,18 +198,15 @@ body{
     padding: 1px;
     margin: 1px;
     height: 50px;
-    width: 100%;
+    width: 99,5%;
 }  
-@media only screen and (max-width: 600px) {
-    .logo {
-        width: 98%; /* Par exemple, réduisez la largeur à 90% pour les appareils mobiles */
-    }
-}
+
+
 .quality{
     color: #604D38;
     position: relative;
     bottom: -490px;
-    left:60px;
+    left:50px;
 }
 .rectangle{
     border:2px solid;
@@ -191,7 +216,7 @@ body{
     border-color: #604D38;
     position: relative;
     bottom: -570px;
-    left: 22px;
+    left: 10px;
 }
 
 .carousel{
@@ -361,35 +386,38 @@ body{
 .serum{
     position: relative;
     top: 1150px;
-    left: 90px;
+    left: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:inline-block;
     color: aliceblue;
     width: 368px;
+    text-align: center;
 }
 .deodorant{
     position: relative;
     top: 1150px;
-    left: 192px;
+    left: 112px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:inline-block;
     color: aliceblue;
     width: 368px;
+    text-align: center;
 }
 .fard{
     position: relative;
     top: 1150px;
-    left: 220px;
+    left: 150px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:inline-block;
     color: aliceblue;
     width: 368px;
+    text-align: center;
 }
 .quality1{
     color: #604D38;
     position: relative;
     top: 1130px;
-    left:60px;
+    left:50px;
 }
 .rectangle1{
     border:2px solid;
@@ -399,7 +427,7 @@ body{
     border-color: #604D38;
     position: relative;
     top: 1200px;
-    left: 22px;
+    left: 10px;
 }
 .visage,
 .corps,
@@ -418,7 +446,7 @@ body{
     justify-content: center;
 }
 .Explorer{
-    background:rgba(214, 254, 187, 0.5);
+    background:#d6febb80;
     color:black;
     border: none; 
     padding: 10px 20px;
@@ -451,7 +479,7 @@ body{
     color: #604D38;
     position: relative;
     top: 1025px;
-    left:60px;
+    left:50px;
 }
 .rectangle2{
     border:2px solid;
@@ -461,7 +489,7 @@ body{
     border-color: #604D38;
     position: relative;
     top: 1095px;
-    left: 22px;
+    left: 10px;
 }
 .temoignages-container {
     margin-top: 1100px;
@@ -472,13 +500,13 @@ body{
   
 .temoignage {
     display: inline-block; /* Afficher les témoignages côte à côte */
-    background:#faefe1;
+    background: linear-gradient(to right, #f8e8d380, rgba(62, 45, 27, 0.5));
     border:none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 20px;
     margin-bottom: 20px;
-    margin-right: 20px; 
-    min-width: 300px; /* Largeur minimale pour chaque témoignage */
+    margin-left: 25px;
+    width: 1170px; 
 }
   
 .temoignage h3 {
@@ -492,5 +520,271 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
-
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
   
+.arrow-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #604D38;
+}
+.quality3{
+    color: #604D38;
+    position: relative;
+    top: -30px;
+    left:50px;
+}
+.rectangle3{
+    border:2px solid;
+    height: 80px;
+    width: 28px;
+    background-color: #604D38;
+    border-color: #604D38;
+    position: relative;
+    top: 51px;
+    left: 10px;
+}  
+.promotion {
+    text-align: center;
+}
+
+.centered-paragraph {
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color: #735d44;
+}
+.parag{
+    margin-bottom: 10px;
+
+}
+.section-contact{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.group{
+    display: flex;
+    gap:10px;
+    margin-bottom: 17px;
+}
+  
+input{
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+    border:1px solid #212121;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #b59b7a80;
+    font-size:medium;
+}
+  
+.mores{
+    background-color:#9DC284;
+    width: 350px;
+    height: 60px;
+    color:#212121;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-left: 120px;
+    font-size:larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    
+}
+.mores:hover {
+    background-color: #988262;
+}
+.entourage{
+    background: linear-gradient(to bottom, #d1bea480, rgba(0, 0, 0, 0.5));
+    border: 2px solid;
+    width: 1300px;
+    border-color: #ffffff;
+    margin-bottom: -300px;
+} 
+.card{
+    width:80px;
+    height:80px;
+    position: relative;
+    margin-left: 190px;
+    margin-top: 10px;
+    
+}
+.communication{
+    width:80px;
+    height:80px;
+    left: 600px;
+    position: relative;
+    top:-150px;
+}
+.message{
+    width:80px;
+    height:80px;
+    position: relative;
+    left: 960px;
+    top: -310px;
+
+}
+.carte{
+    position: relative;
+    bottom: 1px;
+    left: 180px;
+    color: #604D38;
+}
+.com{
+    position: relative;
+    top:-153px ;
+    left:550px;
+    color: #604D38;
+}
+.mes{
+    position: relative;
+    bottom:-100px ;
+    top:-305px ;
+    left:900px;
+    color: #604D38;
+}
+.sakhacura{
+    font-size:100px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: -50px;
+    margin-left: 200px;
+    color: #685f54;
+}
+.sm{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #685f54;
+    font-size:larger;
+    position: relative;
+    top: -110px;
+    left: 120px;
+}
+.network{
+    margin-top: -110px;
+    margin-left: 150px;
+}
+.instagram{
+    width:60x ;
+    height:70px ;
+}
+.facebook{
+    width:54px ;
+    height:70px ;
+}
+.pinterest{
+    width:65px ;
+    height:80px ;
+}
+.tiktok{
+    width:70px ;
+    height:80px ;
+    margin-bottom:-4px;
+
+}
+.circeld{
+    position: relative;
+    left: 100px;
+    bottom: -5px;
+    width: 30px;
+}
+.ou{
+    position: relative;
+    top: -24px;
+    left: 130px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5a5a5a;
+}
+.information{
+    position: relative;
+    left:950px;
+    top: -300px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: #604D38;
+}   
+.aboutinfo{
+    position: relative;
+    margin-left: 950px;
+    margin-top: -298px;
+    color: #604D38;
+    white-space: nowrap;
+}
+.a{
+    border-bottom: 1px solid #604D38;
+    padding-bottom: 5px;
+    width: 52%;
+    
+}
+.b{
+    border-bottom: 1px solid #604D38;
+    padding-bottom: 5px;
+    width: 10%;
+}
+.c{
+    border-bottom: 1px solid #604D38;
+    padding-bottom: 5px;
+    width: 35%;
+}
+.d{ 
+    border-bottom: 1px solid #604D38;
+    padding-bottom: 5px;
+    width: 32%;
+}
+.payement{
+    margin-top: 20px;
+    margin-left: 850px;
+}
+.Applepay{
+    width:40x ;
+    height:60px ;
+    position: relative;
+    left: 60px;
+    bottom: -10px;
+}
+.jcb{
+    width:40px ;
+    height:50px ;
+    position: relative;
+    left: 70px;
+}
+.visa{
+    width:40px ;
+    height:50px ;
+    position: relative;
+    left: 80px;
+}
+.mastercard{
+    width:40px ;
+    height:50px ;
+    position: relative;
+    left: 90px;
+
+}
+.google{
+    position: relative;
+    left: 100px;
+    bottom: -5px;
+    width: 40px;
+    height:50px ;
+    top: 1px;
+}
+.paypal{
+    width:40x ;
+    height:50px ;
+    position: relative;
+    left: -210px;
+}
+.dernier{
+    position: relative;
+    margin-top: 150px;
+}
